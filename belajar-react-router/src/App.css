@@ -1,0 +1,21 @@
+a.active{
+  color:green
+}
+
+a{
+  margin-right:5px
+}
+
+div{
+  margin-top:10px
+}
+
+#container{
+  display: flex;
+}
+
+#sidebar{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}

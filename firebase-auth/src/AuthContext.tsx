@@ -4,10 +4,9 @@ import { auth } from "./FirebaseConfig"
 
 interface AuthContextType{
     currentUser:User|null,
-    loading:boolean
 }
 
-export const AuthContext = React.createContext<AuthContextType>({currentUser:null,loading:true})
+export const AuthContext = React.createContext<AuthContextType>({currentUser:null})
 
 interface Props{
     children?:ReactNode
@@ -27,7 +26,6 @@ export const AuthProvider = ({ children }:Props) =>{
     },[])
     const value = {
         currentUser,
-        loading
     }
 
     return (
